@@ -1,0 +1,61 @@
+{
+  "name": "egg-ebus",
+  "version": "0.1.1",
+  "description": "delay queue and event plugin.",
+  "eggPlugin": {
+    "name": "ebus"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "queue",
+    "event",
+    "delay"
+  ],
+  "peerDependencies": {
+    "bullmq": "^4.7.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "egg": "^3",
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "egg-mock": "^5",
+    "eslint": "^8",
+    "eslint-config-egg": "^12"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "files": [
+    "lib",
+    "app.js",
+    "agent.js",
+    "config",
+    "app",
+    "index.js"
+  ],
+  "ci": {
+    "version": "16, 18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-ebus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-ebus#readme",
+  "author": "yc <1003935728@qq.com>",
+  "license": "MIT"
+}
